@@ -59,59 +59,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ConfigMakerByQuery.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/yandex/collector/util/ConfigMakerByQuery.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="48" selection-start="632" selection-end="632" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="patch0.sql" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sql/patch0.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="30" selection-start="124" selection-end="124" vertical-scroll-proportion="0.18181819">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Storekeeper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/yandex/collector/util/Storekeeper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="51" selection-start="3737" selection-end="3739" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SearchYalet.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/yandex/collector/yalets/SearchYalet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="22" selection-start="332" selection-end="332" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="58" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Clusterizer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/yandex/collector/util/Clusterizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="22" selection-start="2966" selection-end="2966" vertical-scroll-proportion="0.0">
+            <state line="31" column="72" selection-start="718" selection-end="718" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -119,10 +70,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.xml">
+      <file leaf-file-name="readme.txt" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/readme.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="13" selection-start="1484" selection-end="1484" vertical-scroll-proportion="0.0">
+            <state line="6" column="25" selection-start="129" selection-end="129" vertical-scroll-proportion="0.27272728">
               <folding />
             </state>
           </provider>
@@ -142,7 +93,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/ru/yandex/collector/miner/Parser.java" />
         <option value="$PROJECT_DIR$/web/show_jobs.xsl" />
         <option value="$PROJECT_DIR$/web/show_jobs.xml" />
         <option value="$PROJECT_DIR$/src/ru/yandex/collector/yalets/ShowJobsYalet.java" />
@@ -155,9 +105,10 @@
         <option value="$PROJECT_DIR$/build.xml" />
         <option value="$PROJECT_DIR$/src/ru/yandex/collector/util/ConfigMakerByQuery.java" />
         <option value="$PROJECT_DIR$/src/ru/yandex/collector/yalets/SearchYalet.java" />
-        <option value="$PROJECT_DIR$/src/ru/yandex/collector/util/Clusterizer.java" />
         <option value="$PROJECT_DIR$/build.properties" />
         <option value="$PROJECT_DIR$/sql/patch0.sql" />
+        <option value="$PROJECT_DIR$/src/ru/yandex/collector/util/Clusterizer.java" />
+        <option value="$PROJECT_DIR$/tests/readme.txt" />
       </list>
     </option>
   </component>
@@ -224,60 +175,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Data Collector Test Task" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Data Collector Test Task" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Data Collector Test Task" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="collector" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Data Collector Test Task" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Data Collector Test Task" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="collector" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Data Collector Test Task" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Data Collector Test Task" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -508,8 +405,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="34" y="73" width="1365" height="717" extended-state="0" />
-    <editor active="true" />
+    <frame x="3" y="0" width="1365" height="717" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -522,7 +419,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21247113" sideWeight="0.72351885" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21247113" sideWeight="0.72351885" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27648115" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="101" y="100" width="1165" height="528" />
@@ -577,20 +474,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.6.0_21/src.zip!/java/lang/System.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="19" selection-start="1187" selection-end="1215" vertical-scroll-proportion="0.33150685">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/search.xsl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="37" selection-start="1797" selection-end="1797" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="62" selection-start="145" selection-end="145" vertical-scroll-proportion="0.09315068">
@@ -640,41 +523,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/yandex/collector/yalets/SearchYalet.java">
+    <entry file="file://$PROJECT_DIR$/sql/patch0.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="22" selection-start="332" selection-end="332" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="58" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/yandex/collector/util/Clusterizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="22" selection-start="2966" selection-end="2966" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="13" selection-start="1484" selection-end="1484" vertical-scroll-proportion="0.0">
+        <state line="4" column="30" selection-start="124" selection-end="124" vertical-scroll-proportion="0.18181819">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/yandex/collector/util/ConfigMakerByQuery.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="48" selection-start="632" selection-end="632" vertical-scroll-proportion="0.0">
+        <state line="27" column="48" selection-start="632" selection-end="632" vertical-scroll-proportion="0.22727273">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -683,14 +541,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/yandex/collector/util/Storekeeper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="51" selection-start="3737" selection-end="3739" vertical-scroll-proportion="0.0">
+        <state line="101" column="51" selection-start="3737" selection-end="3739" vertical-scroll-proportion="0.7352941">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sql/patch0.sql">
+    <entry file="file://$PROJECT_DIR$/src/ru/yandex/collector/yalets/SearchYalet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="30" selection-start="124" selection-end="124" vertical-scroll-proportion="0.18181819">
+        <state line="12" column="22" selection-start="332" selection-end="332" vertical-scroll-proportion="0.54545456">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="58" selection-start="173" selection-end="173" vertical-scroll-proportion="0.13636364">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="13" selection-start="1484" selection-end="1484" vertical-scroll-proportion="1.7727273">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_output.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.0656717">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/yandex/collector/util/Clusterizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="72" selection-start="718" selection-end="718" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="25" selection-start="129" selection-end="129" vertical-scroll-proportion="0.27272728">
           <folding />
         </state>
       </provider>

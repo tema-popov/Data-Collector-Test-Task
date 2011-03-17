@@ -35,7 +35,7 @@ public class Clusterizer {
         double result = compareTexts(a.getDescription(), b.getDescription()) * 0.35 +
                 compareTexts(a.getTitle(), b.getTitle()) * 0.45 +
                 compareSalaries(a.getSalary(), b.getSalary()) * 0.2;
-        return result >= 0.80;
+        return result >= 0.75;
     }
 
     private double compareTexts(String stringA, String stringB) {

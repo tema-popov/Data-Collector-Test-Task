@@ -3,14 +3,14 @@
 <config charset="UTF-8">
 	<include path="functions.xml"/>
 	
-    <var-def name="searchQuery">Программист</var-def>
+    <var-def name="searchQuery">Дизайнер</var-def>
     
 	<var-def name="jobs">
 	  	<call name="download-multipage-list">
 		  	<call-param name="pageUrl">http://rabota.yandex.ru/search.xml?text=<var name="searchQuery"/></call-param>
 	       	<call-param name="nextXPath">//a[starts-with(., 'следующая')]/@href</call-param>
 	       	<call-param name="itemXPath">//div[@class="b-job-item g-js b-job-item_js_inited"]</call-param>
-	       	<call-param name="maxloops">5</call-param>
+	       	<call-param name="maxloops">50</call-param>
 		</call>	
 	</var-def>	
 	
