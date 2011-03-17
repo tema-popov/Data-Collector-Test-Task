@@ -109,10 +109,7 @@ public class Clusterizer {
     public List<Job> clusterizeAll(List<Job> notClusterizedYet, List<Job> clusterized) {
         result = new ArrayList<Job>();
         for (Job each : notClusterizedYet) {
-            System.out.println("Обработка:" + each);
             clusterizeJob(each, clusterized);
-            System.out.println("---");
-
         }
         return result;
     }
