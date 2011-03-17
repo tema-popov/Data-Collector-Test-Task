@@ -70,11 +70,11 @@ public class SearchYalet extends AbstractDbYalet {
     }
 
     private List<Job> checkQuery(){
-        ConfigMakerByQuery configMakerByQuery = new ConfigMakerByQuery(loop, query, "../resources/" + "miner_config_template.xml");
+        ConfigMakerByQuery configMakerByQuery = new ConfigMakerByQuery(loop, query, "/resources/" + "miner_config_template.xml");
         configMakerByQuery.makeConfig();
-        miner = new Miner("../resources/", "miner_config_template.xml");
+        miner = new Miner("resources/", "miner_config_template.xml");
         miner.minerStart();
-        parser = new Parser("../resources/" + "jobsoutput.xml");
+        parser = new Parser("resources/" + "jobsoutput.xml");
         storekeeper.putJobs(parser.parseIntoJobs());
         List<Job> jobsNotClusterized = storekeeper.getNotClusterizedJobs();
         List<Job> jobsClusterized = storekeeper.getClusterizedJobs();
