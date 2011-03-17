@@ -60,15 +60,15 @@ public class Storekeeper {
         return jobsQuery;
     }
 
-    public List<Job> getClusters() {
+    public List<List<Job>> getClusters() {
         List<Job> jobsClusters;
         jobsClusters = jdbcTemplate.getJdbcOperations().query("select * from all_jobs " +
                 "GROUP BY cluster_id " +
                 "having count(cluster_id) > 1" +
                 " order by cluster_id", mapper);
-        List<Job> jobsQuery = new ArrayList<Job>();
+        List<List<Job>> jobsQuery = new ArrayList<List<Job>>();
         for (Job job: jobsClusters){
-            jobsQuery.addAll(jdbcTemplate.getJdbcOperations().query("select * from all_jobs " +
+            jobsQuery.add(jdbcTemplate.getJdbcOperations().query("select * from all_jobs " +
                 "where cluster_id = '" + job.getClusterId() + "'" +
                 "order by title", mapper));
         }

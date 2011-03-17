@@ -41,12 +41,12 @@ public class SearchYalet extends AbstractDbYalet {
         if ("query".equals(button)){
             query = req.getParameter("queryText");
             loop = req.getIntParameter("loop");
-            checkQuery();
-            jobs = storekeeper.getAll();
+            jobs = checkQuery();
+
             for (Job each: jobs){
                 res.add(each);
             }
-            answer = "Добавлено в базу";
+            answer = "Добавлено записей в базу данных: " + jobs.size();
             res.add(answer);
             return;
         }
@@ -55,23 +55,26 @@ public class SearchYalet extends AbstractDbYalet {
             for (Job each: jobs){
                 res.add(each);
             }
-            answer = "Показана вся база";
+            answer = "Показана вся база данных. Записей: " + jobs.size();
             res.add(answer);
             return;
         }
         if ("cluster".equals(button)){
-            jobs = storekeeper.getClusters();
-            for (Job each: jobs){
+            int numberOfRecords = 0;
+            List<List<Job>> clusters = storekeeper.getClusters();
+            for (List<Job> each: clusters){
                 res.add(each);
+                numberOfRecords += each.size();
             }
-            answer = "Показаны похожие записи";
+            answer = "Выявлено кластеров с повторениями: " + clusters.size() +
+                    ". Всего элементов показано: " + numberOfRecords;
             res.add(answer);
             return;
         }
 
     }
 
-    private void checkQuery(){
+    private List<Job> checkQuery(){
         ConfigMakerByQuery configMakerByQuery = new ConfigMakerByQuery(loop, query, "../resources/" + "miner_config_template.xml");
         configMakerByQuery.makeConfig();
         miner = new Miner("../resources/", "miner_config_template.xml");
@@ -84,6 +87,7 @@ public class SearchYalet extends AbstractDbYalet {
         List<Job> testResult = clusterizer.clusterizeAll(jobsNotClusterized, jobsClusterized);
         storekeeper.putJobs(testResult);
         storekeeper.setLastRootNumber(clusterizer.getLastRootNumber());
+        return jobsNotClusterized;
     }
 
 }

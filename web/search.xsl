@@ -32,19 +32,24 @@
                 <xsl:apply-templates select="page/data/string"/>
                 <xsl:if test="boolean(page/data/string)"><hr/></xsl:if>
                 <xsl:apply-templates select="page/data/job"/>
+                <xsl:apply-templates select="page/data/collection"/>
 
             </body>
         </html>
     </xsl:template>
 
-     <xsl:template match="job">
+    <xsl:template match="collection">
+        <xsl:apply-templates select="job"/>
+        <hr/>
+    </xsl:template>
+
+    <xsl:template match="job">
         <h1><xsl:value-of select="title"/></h1>
         <p><xsl:value-of select="description"/></p>
         <p><xsl:value-of select="salary"/></p>
         <a href="{link}"><xsl:value-of select="link"/></a>
         <p><xsl:if test="@full-day = 'true'">Полный День</xsl:if></p>
     </xsl:template>
-
 
 
 </xsl:stylesheet>
