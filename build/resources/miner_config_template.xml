@@ -3,7 +3,7 @@
 <config charset="UTF-8">
 	<include path="functions.xml"/>
 	
-    <var-def name="searchQuery">Менеджер по продажам</var-def>
+    <var-def name="searchQuery">Программист</var-def>
     
 	<var-def name="jobs">
 	  	<call name="download-multipage-list">
