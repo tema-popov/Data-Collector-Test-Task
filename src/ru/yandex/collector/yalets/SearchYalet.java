@@ -70,7 +70,7 @@ public class SearchYalet extends AbstractDbYalet {
     }
 
     private List<Job> checkQuery(){
-        ConfigMakerByQuery configMakerByQuery = new ConfigMakerByQuery(loop, query, "/resources/" + "miner_config_template.xml");
+        ConfigMakerByQuery configMakerByQuery = new ConfigMakerByQuery(loop, query, "resources/" + "miner_config_template.xml");
         configMakerByQuery.makeConfig();
         miner = new Miner("resources/", "miner_config_template.xml");
         miner.minerStart();
