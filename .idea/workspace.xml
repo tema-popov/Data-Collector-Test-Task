@@ -59,55 +59,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TestMain.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/yandex/collector/test/TestMain.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="17" selection-start="2072" selection-end="2072" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SearchYalet.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/yandex/collector/yalets/SearchYalet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="84" selection-start="1722" selection-end="1722" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Storekeeper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/yandex/collector/util/Storekeeper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="39" selection-start="2585" selection-end="2585" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Clusterizer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/yandex/collector/util/Clusterizer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="82" selection-start="894" selection-end="894" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Job.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/yandex/collector/model/Job.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="15" column="29" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="62" selection-start="64" selection-end="64" vertical-scroll-proportion="0.04657534">
               <folding />
             </state>
           </provider>
@@ -134,7 +89,36 @@
       <file leaf-file-name="ConfigMakerByQuery.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/yandex/collector/util/ConfigMakerByQuery.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="23" selection-start="1862" selection-end="1862" vertical-scroll-proportion="0.0">
+            <state line="35" column="46" selection-start="853" selection-end="853" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Miner.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/yandex/collector/util/Miner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="0" selection-start="795" selection-end="795" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Parser.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/yandex/collector/util/Parser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="109" selection-start="1454" selection-end="1454" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Storekeeper.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ru/yandex/collector/util/Storekeeper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="81" column="39" selection-start="2960" selection-end="2960" vertical-scroll-proportion="3.4465754">
               <folding />
             </state>
           </provider>
@@ -172,13 +156,13 @@
         <option value="$PROJECT_DIR$/src/ru/yandex/collector/yalets/ShowJobsYalet.java" />
         <option value="$PROJECT_DIR$/script/beans.xml" />
         <option value="$PROJECT_DIR$/web/search.xml" />
-        <option value="$PROJECT_DIR$/src/ru/yandex/collector/util/ConfigMakerByQuery.java" />
         <option value="$PROJECT_DIR$/src/ru/yandex/collector/model/Job.java" />
-        <option value="$PROJECT_DIR$/src/ru/yandex/collector/util/Clusterizer.java" />
-        <option value="$PROJECT_DIR$/src/ru/yandex/collector/util/Storekeeper.java" />
         <option value="$PROJECT_DIR$/web/search.xsl" />
-        <option value="$PROJECT_DIR$/src/ru/yandex/collector/yalets/SearchYalet.java" />
         <option value="$PROJECT_DIR$/README" />
+        <option value="$PROJECT_DIR$/src/ru/yandex/collector/util/Clusterizer.java" />
+        <option value="$PROJECT_DIR$/src/ru/yandex/collector/yalets/SearchYalet.java" />
+        <option value="$PROJECT_DIR$/src/ru/yandex/collector/util/ConfigMakerByQuery.java" />
+        <option value="$PROJECT_DIR$/src/ru/yandex/collector/util/Storekeeper.java" />
       </list>
     </option>
   </component>
@@ -478,6 +462,7 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922536" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39612675" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270548" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -492,7 +477,6 @@
       <window_info id="Documentation" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="101" y="100" width="1165" height="528" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922536" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -534,29 +518,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.6.0_21/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="19" selection-start="3623" selection-end="3623" vertical-scroll-proportion="0.3322884" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/beans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="21" selection-start="1485" selection-end="1485" vertical-scroll-proportion="0.2560241" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/show_jobs.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="4" selection-start="106" selection-end="128" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.6.0_21/src.zip!/java/util/AbstractList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="371" column="0" selection-start="12229" selection-end="12229" vertical-scroll-proportion="0.33333334" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/show_jobs.xsl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="124" selection-start="511" selection-end="511" vertical-scroll-proportion="0.7005494" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/miner_config_template.xml">
@@ -585,38 +549,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/yandex/collector/util/Storekeeper.java">
+    <entry file="file://$PROJECT_DIR$/README">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="39" selection-start="2585" selection-end="2585" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/yandex/collector/util/Clusterizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="82" selection-start="894" selection-end="894" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/yandex/collector/test/TestMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="17" selection-start="2072" selection-end="2072" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/yandex/collector/util/ConfigMakerByQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="23" selection-start="1862" selection-end="1862" vertical-scroll-proportion="0.0">
+        <state line="2" column="62" selection-start="145" selection-end="145" vertical-scroll-proportion="0.09315068">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/yandex/collector/yalets/SearchYalet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="84" selection-start="1722" selection-end="1722" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="68" column="21" selection-start="2064" selection-end="2064" vertical-scroll-proportion="0.42077923">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -627,9 +572,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README">
+    <entry file="file://$PROJECT_DIR$/src/ru/yandex/collector/util/Clusterizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="62" selection-start="64" selection-end="64" vertical-scroll-proportion="0.04657534">
+        <state line="12" column="70" selection-start="232" selection-end="232" vertical-scroll-proportion="-0.44155845">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/yandex/collector/util/ConfigMakerByQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="46" selection-start="853" selection-end="853" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/yandex/collector/util/Miner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="0" selection-start="795" selection-end="795" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/yandex/collector/util/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="109" selection-start="1454" selection-end="1454" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/yandex/collector/util/Storekeeper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="39" selection-start="2960" selection-end="2960" vertical-scroll-proportion="3.4465754">
           <folding />
         </state>
       </provider>

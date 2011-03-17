@@ -1,6 +1,5 @@
 package ru.yandex.collector.util;
 
-import ru.yandex.collector.model.Job;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -14,7 +13,6 @@ import java.util.List;
  * Description:
  */
 public class ConfigMakerByQuery {
-    private BufferedReader in;
     private int loop;
     private List<String> buffer;
     private PrintWriter out;
@@ -35,6 +33,7 @@ public class ConfigMakerByQuery {
     }
 
     private void readParserConfigFile() {
+        BufferedReader in;
         try {
             in = new BufferedReader(new FileReader(parserConfigFileName));
             buffer = new ArrayList<String>();

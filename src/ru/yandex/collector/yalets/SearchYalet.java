@@ -3,12 +3,8 @@ package ru.yandex.collector.yalets;
 import net.sf.xfresh.core.InternalRequest;
 import net.sf.xfresh.core.InternalResponse;
 import net.sf.xfresh.db.AbstractDbYalet;
-import org.springframework.jdbc.core.simple.ParameterizedRowMapper;
 import ru.yandex.collector.util.*;
 import ru.yandex.collector.model.Job;
-
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.List;
 
 /**
@@ -69,7 +65,6 @@ public class SearchYalet extends AbstractDbYalet {
             answer = "Выявлено кластеров с повторениями: " + clusters.size() +
                     ". Всего элементов показано: " + numberOfRecords;
             res.add(answer);
-            return;
         }
 
     }

@@ -20,10 +20,10 @@ public class Storekeeper {
     private SimpleJdbcTemplate jdbcTemplate;
     private ShowJobsMapper mapper = new ShowJobsMapper();
 
-     private static class ShowJobsMapper implements ParameterizedRowMapper<Job> {
+    private static class ShowJobsMapper implements ParameterizedRowMapper<Job> {
         public Job mapRow(final ResultSet rs, final int i) throws SQLException {
             return new Job(rs.getString("title"), rs.getString("description"), rs.getString("link"),
-                    rs.getString("salary"), (rs.getInt("full_day") ==  1), rs.getInt("cluster_id"));
+                    rs.getString("salary"), (rs.getInt("full_day") == 1), rs.getInt("cluster_id"));
 
         }
     }
@@ -67,17 +67,16 @@ public class Storekeeper {
                 "having count(cluster_id) > 1" +
                 " order by cluster_id", mapper);
         List<List<Job>> jobsQuery = new ArrayList<List<Job>>();
-        for (Job job: jobsClusters){
+        for (Job job : jobsClusters) {
             jobsQuery.add(jdbcTemplate.getJdbcOperations().query("select * from all_jobs " +
-                "where cluster_id = '" + job.getClusterId() + "'" +
-                "order by title", mapper));
+                    "where cluster_id = '" + job.getClusterId() + "'" +
+                    "order by title", mapper));
         }
         return jobsQuery;
     }
 
     public void putJobs(List<Job> jobs) {
         for (Job each : jobs) {
-            String changedDsc = each.getDescription();
             jdbcTemplate.getJdbcOperations().execute("DELETE FROM all_jobs WHERE link = '" + each.getLink() + "' ");
             jdbcTemplate.getJdbcOperations().execute("INSERT INTO all_jobs (`title` ," +
                     "`description` ," +
@@ -86,7 +85,7 @@ public class Storekeeper {
                     "`full_day`, " +
                     "`cluster_id`) " +
                     "VALUES('" + each.getTitle() +
-                    "', '" + each.getDescription().replace("\'","\'\'") +
+                    "', '" + each.getDescription().replace("\'", "\'\'") +
                     "', '" + each.getLink() +
                     "', '" + each.getSalary() +
                     "', '" + ((each.getFullDay()) ? "1" : "0") +
@@ -95,11 +94,11 @@ public class Storekeeper {
 
     }
 
-    public int getLastRootNumber(){
+    public int getLastRootNumber() {
         return jdbcTemplate.getJdbcOperations().queryForInt("select var_value from var where var_name = 'last_cluster'");
     }
 
-    public void setLastRootNumber(int lastRootNumber){
+    public void setLastRootNumber(int lastRootNumber) {
         jdbcTemplate.getJdbcOperations().execute("UPDATE var SET var_value = " + lastRootNumber +
                 " WHERE var_name = 'last_cluster' ");
     }

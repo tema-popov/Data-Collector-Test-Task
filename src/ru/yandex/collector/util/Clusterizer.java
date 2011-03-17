@@ -2,7 +2,6 @@ package ru.yandex.collector.util;
 
 import ru.yandex.collector.model.Job;
 
-import javax.management.monitor.StringMonitor;
 import java.util.*;
 import java.util.regex.Pattern;
 
@@ -32,10 +31,10 @@ public class Clusterizer {
         this.lastRootNumber = lastRootNumber;
     }
 
-    private boolean isSimilar(Job a, Job b){
-        double result = compareTexts(a.getDescription(),b.getDescription()) * 0.35 +
-                compareTexts(a.getTitle(),b.getTitle()) * 0.45 +
-                compareSalaries(a.getSalary(),b.getSalary()) * 0.2;
+    private boolean isSimilar(Job a, Job b) {
+        double result = compareTexts(a.getDescription(), b.getDescription()) * 0.35 +
+                compareTexts(a.getTitle(), b.getTitle()) * 0.45 +
+                compareSalaries(a.getSalary(), b.getSalary()) * 0.2;
         return result >= 0.80;
     }
 
@@ -44,13 +43,13 @@ public class Clusterizer {
         List<String> setB = getSetWords(stringB);
         double maxCountWords = max(setA.size(), setB.size());
         double countEqualWords = 0;
-        for (String each: setA){
-            if (setB.contains(each)){
+        for (String each : setA) {
+            if (setB.contains(each)) {
                 setB.remove(each);
                 countEqualWords++;
             }
         }
-        return countEqualWords/maxCountWords;
+        return countEqualWords / maxCountWords;
     }
 
     private double compareSalaries(String stringA, String stringB) {
@@ -58,45 +57,43 @@ public class Clusterizer {
         List<String> setB = getSetSalaries(stringB);
         double maxCountWords = max(setA.size(), setB.size());
         double countEqualWords = 0;
-        for (String each: setA){
-            if (setB.contains(each)){
+        for (String each : setA) {
+            if (setB.contains(each)) {
                 setB.remove(each);
                 countEqualWords++;
             }
         }
-        return countEqualWords/maxCountWords;
+        return countEqualWords / maxCountWords;
     }
 
-    private List<String> getSetWords(String s){
+    private List<String> getSetWords(String s) {
         List<String> set = new ArrayList<String>();
-        StringTokenizer stringTokenizer = new StringTokenizer(s,"\n .,-!@#$%^&*()/\t");
+        StringTokenizer stringTokenizer = new StringTokenizer(s, "\n .,-!@#$%^&*()/\t");
         String curString;
-        while (stringTokenizer.hasMoreTokens()){
+        while (stringTokenizer.hasMoreTokens()) {
             curString = stringTokenizer.nextToken();
-            if (curString.length() > 2){
+            if (curString.length() > 2) {
                 set.add(curString);
             }
         }
         return set;
     }
 
-     private List<String> getSetSalaries(String s){
+    private List<String> getSetSalaries(String s) {
 
 
         List<String> set = new ArrayList<String>();
-        StringTokenizer stringTokenizer = new StringTokenizer(s,"\n .,!@#$%^&*()/\t");
+        StringTokenizer stringTokenizer = new StringTokenizer(s, "\n .,!@#$%^&*()/\t");
         String curString;
         String buffer = "";
-        while (stringTokenizer.hasMoreTokens()){
+        while (stringTokenizer.hasMoreTokens()) {
             curString = stringTokenizer.nextToken();
-            if (isMatch(curString)){
+            if (isMatch(curString)) {
                 buffer += curString;
-            }
-            else {
-                if ("".equals(buffer)){
+            } else {
+                if ("".equals(buffer)) {
                     set.add(curString);
-                }
-                else {
+                } else {
                     set.add(buffer);
                 }
 
@@ -105,39 +102,38 @@ public class Clusterizer {
         return set;
     }
 
-    boolean isMatch(String str){
+    boolean isMatch(String str) {
         return INT_PATTERN.matcher(str).matches();
     }
 
-    public List<Job> clusterizeAll(List<Job> notClusterizedYet, List<Job> clusterized){
+    public List<Job> clusterizeAll(List<Job> notClusterizedYet, List<Job> clusterized) {
         result = new ArrayList<Job>();
-        for (Job each: notClusterizedYet){
-                System.out.println("Обработка:" + each);
+        for (Job each : notClusterizedYet) {
+            System.out.println("Обработка:" + each);
             clusterizeJob(each, clusterized);
-                System.out.println("---");
+            System.out.println("---");
 
         }
         return result;
     }
 
-    private void clusterizeJob(Job job, List<Job> clusterized){
-        Job buffer = job;
-        for (Job clusterizedJob: clusterized ){
-            if (isSimilar(job,clusterizedJob)){
-                buffer.setClusterId(clusterizedJob.getClusterId());
-                result.add(buffer);
+    private void clusterizeJob(Job job, List<Job> clusterized) {
+        for (Job clusterizedJob : clusterized) {
+            if (isSimilar(job, clusterizedJob)) {
+                job.setClusterId(clusterizedJob.getClusterId());
+                result.add(job);
                 return;
             }
         }
-        for (Job clusterizedJob: result ){
-            if (isSimilar(job,clusterizedJob)){
-                buffer.setClusterId(clusterizedJob.getClusterId());
-                result.add(buffer);
+        for (Job clusterizedJob : result) {
+            if (isSimilar(job, clusterizedJob)) {
+                job.setClusterId(clusterizedJob.getClusterId());
+                result.add(job);
                 return;
             }
         }
         lastRootNumber++;
-        buffer.setClusterId(lastRootNumber);
-        result.add(buffer);
+        job.setClusterId(lastRootNumber);
+        result.add(job);
     }
 }
