@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_db" default="compile.module.db">
+  <dirname property="module.db.basedir" file="${ant.file.module_db}"/>
+  
+  <property name="module.jdk.home.db" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.db" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.db" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.db" value="${compiler.args}"/>
+  
+  <property name="db.output.dir" value="${module.db.basedir}/../../../out/production/db"/>
+  <property name="db.testoutput.dir" value="${module.db.basedir}/../../../out/test/db"/>
+  
+  <path id="db.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="db.module.production.classpath">
+    <path refid="${module.jdk.classpath.db}"/>
+    <pathelement location="${core.output.dir}"/>
+    <path refid="library.lib.classpath"/>
+  </path>
+  
+  <path id="db.runtime.production.module.classpath">
+    <pathelement location="${db.output.dir}"/>
+    <path refid="core.runtime.production.module.classpath"/>
+    <path refid="library.lib.classpath"/>
+  </path>
+  
+  <path id="db.module.classpath">
+    <path refid="${module.jdk.classpath.db}"/>
+    <pathelement location="${db.output.dir}"/>
+    <pathelement location="${core.testoutput.dir}"/>
+    <pathelement location="${core.output.dir}"/>
+    <path refid="library.lib.classpath"/>
+  </path>
+  
+  <path id="db.runtime.module.classpath">
+    <pathelement location="${db.testoutput.dir}"/>
+    <pathelement location="${db.output.dir}"/>
+    <path refid="core.runtime.module.classpath"/>
+    <path refid="library.lib.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.db">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.db">
+    <patternset refid="excluded.from.module.db"/>
+  </patternset>
+  
+  <path id="db.module.sourcepath">
+    <dirset dir="${module.db.basedir}">
+      <include name="src/java"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.db" depends="compile.module.db.production,compile.module.db.tests" description="Compile module db"/>
+  
+  <target name="compile.module.db.production" depends="register.custom.compilers,compile.module.core" description="Compile module db; production classes">
+    <mkdir dir="${db.output.dir}"/>
+    <javac2 destdir="${db.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.db}/javac">
+      <compilerarg line="${compiler.args.db}"/>
+      <bootclasspath refid="db.module.bootclasspath"/>
+      <classpath refid="db.module.production.classpath"/>
+      <src refid="db.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.db"/>
+    </javac2>
+    
+    <copy todir="${db.output.dir}">
+      <fileset dir="${module.db.basedir}/src/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.db.tests" depends="register.custom.compilers,compile.module.db.production" description="compile module db; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.db" description="cleanup module">
+    <delete dir="${db.output.dir}"/>
+    <delete dir="${db.testoutput.dir}"/>
+  </target>
+</project>

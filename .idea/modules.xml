@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Data Collector Test Task.iml" filepath="$PROJECT_DIR$/Data Collector Test Task.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/xfresh/core/src/core.iml" filepath="$PROJECT_DIR$/libs/xfresh/core/src/core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/xfresh/db/db.iml" filepath="$PROJECT_DIR$/libs/xfresh/db/db.iml" />
+    </modules>
+  </component>
+</project>
+

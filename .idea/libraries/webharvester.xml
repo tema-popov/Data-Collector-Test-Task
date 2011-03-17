@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="webharvester">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/libs/webharvester" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://$PROJECT_DIR$/libs/webharvester/doc" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/libs/webharvester/commons-collections-3.1.jar!/" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/libs/webharvester" recursive="false" />
+  </library>
+</component>
